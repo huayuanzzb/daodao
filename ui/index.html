@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:;">
+    <title>Daodao - 聊天软件</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #f5f5f5;
+      }
+      
+      #app {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      
+      #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="loading">正在加载应用...</div>
+    </div>
+    <script type="module" src="./assets/main.js"></script>
+  </body>
+</html>
